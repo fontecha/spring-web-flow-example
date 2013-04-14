@@ -10,6 +10,17 @@
 
 	<build>
 		<finalName>spring-web-flow</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+		
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
 	<properties>
@@ -100,5 +111,15 @@
 		</dependency>
 
 	</dependencies>
+	
+	<repositories>
+		<repository>
+<id>prime-repo</id>
+<name>PrimeFaces Maven Repository</name>
+<url>http://repository.primefaces.org</url>
+<layout>default</layout>
+</repository>
+		
+	</repositories>
 
 </project>
